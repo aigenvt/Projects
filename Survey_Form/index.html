@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Cover Letter</h1>
+    <p id="description">Please fill out this form</p>
+
+    <form action="post" id="survey-form">
+
+        <div id="container">
+
+            <div id="personal-questions">
+                <label id="name-label" for="name-label">Enter your name: <input type="text" id="name" required placeholder="Your name"></label>
+                <label id="surname-label" for="surname-label">Enter your surname: <input type="text" id="surname" required placeholder="Your surname"></label>
+                <label id="number-label" for="number-label">Enter your age: <input type="number" id="number" required min="18" max="50" placeholder="Your age"></label>
+                <label id="email-label" for="email-label">Enter your email: <input type="email" id="email" required placeholder="Your email"></label>
+            </div>
+            
+            <div id="business-questions">
+                <label for="dropdown-label">Select position your applying for: <select name="dropdown" id="dropdown">
+                    <option value="1">Select here</option>
+                    <option value="2">Front-end Developer</option>
+                    <option value="3">Back-end Developer</option>
+                    <option value="4">Product Manager</option>
+                </select>
+                </label>
+                <label for="experience-label">Enter your years of experince: <input type="number" id="experince" required placeholder="Your experience"></label>
+                <label for="role-label">Enter your former role: <input type="text" id="role" min="0" max="25"  placeholder="Your role"></label>
+                <label for="qualification-label">Upload your qualifications: <input type="file" id="qualification"></label>
+            </div>
+        </div>
+        <hr>
+        <div id="container-2">
+            <p>Have you worked with these companies before?</p>
+            <label for="job"><input type="checkbox" name="job" value="Ford">Ford</label>
+            <label for="job"><input type="checkbox" name="job" value="Mercedes">Mercedes</label>
+            <label for="job"><input type="checkbox" name="job" value="Audi">Audi</label>
+            <label for="job"><input type="checkbox" name="job" value="None">None of the above</label>
+
+            <p>Would you consider relocating for this job?</p>
+            <label><input type="radio" name="relocation" value="no"> No</label>
+            <label><input type="radio" name="relocation" value="maybe"> Maybe</label>
+            <label><input type="radio" name="relocation" value="definitely"> Definitely</label>
+        </div>
+
+        
+        
+        <p>Please describe why do you want this job</p>
+        <textarea name="textarea" id="textarea" placeholder="I want this job because..." rows="10" cols="70"></textarea>
+
+        <input type="submit" id="submit">
+    
+    </form>
+
+
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+h1,p{
+    text-align: center;
+}
+p{
+    font-weight: bolder;
+    font-size: 20px;
+}
+label{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+label , input,select{
+    display: block;
+    font-size: 20px;
+    margin: 8px 0;
+    width: 90%;
+}
+select{
+    margin-top: 3%;
+    width: 90%;
+
+}
+hr{
+    margin: 40px 0 40px 0 ;
+}
+
+#survey-form{
+    border: 1px solid black;
+    width: 80vw;
+    margin: 40px auto;;
+    padding: 30px;
+}
+#container{
+
+    display:flex;
+}
+#personal-questions{
+
+    display: inline-block;
+    width: 50%;
+
+}
+#business-questions{
+
+    display: inline-block;
+    width:50%;
+}
+
+#container-2 label {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 20px;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#container-2 input[type="radio"] {
+    width: auto;
+    margin-right: 8px;
+    margin-top: 5px;
+}
+#container-2 input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
+    margin-top: 5px;
+}
+#container input[type="file"]{
+    font-size: 17px;
+    margin-top: 13px;
+}
+#submit{
+    width: 20%;
+    margin-top: 15px;
+}
